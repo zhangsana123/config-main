@@ -1,0 +1,11 @@
+config SHIELD_ALLIUM46_LEFT
+    def_bool $(shields_list_contains,allium46_left)
+
+config SHIELD_ALLIUM46_RIGHT
+    def_bool $(shields_list_contains,allium46_right)
+
+config SHIELD_ALLIUM46_LEFT_PERIPHERAL
+    def_bool $(shields_list_contains,allium46_left_peripheral)
+
+config SHIELD_ALLIUM46_DONGLE_PRO_MICRO
+    def_bool $(shields_list_contains,allium46_dongle_pro_micro)

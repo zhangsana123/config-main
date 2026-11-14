@@ -1,0 +1,15 @@
+file_format: "1"
+id: allium46
+name: Allium46
+type: shield
+requires: [nice_nano_v2]
+features:
+  - keys
+  - display
+  - pointing
+  - studio
+siblings:
+  - allium46_left
+  - allium46_right
+  - allium46_left_peripheral
+  - allium46_dongle_pro_micro

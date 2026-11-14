@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2024
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * 左半 peripheral 版本：与 allium46_left 硬件接线完全一致，
+ * 但不作为 central（供 dongle 作为 central 时连接使用）。
+ */
+
+#include "allium46.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&gpio0 9  GPIO_ACTIVE_HIGH>
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        , <&gpio1 11 GPIO_ACTIVE_HIGH>
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>
+        , <&gpio1 15 GPIO_ACTIVE_HIGH>
+        , <&gpio0 2  GPIO_ACTIVE_HIGH>
+        ;
+};

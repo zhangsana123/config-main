@@ -1,0 +1,34 @@
+if SHIELD_ALLIUM46_LEFT || SHIELD_ALLIUM46_DONGLE_PRO_MICRO
+
+config ZMK_KEYBOARD_NAME
+    default "Allium46"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ALLIUM46_LEFT || SHIELD_ALLIUM46_RIGHT || SHIELD_ALLIUM46_LEFT_PERIPHERAL || SHIELD_ALLIUM46_DONGLE_PRO_MICRO
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_ALLIUM46_DONGLE_PRO_MICRO
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
+endif # ZMK_DISPLAY
+
+endif
